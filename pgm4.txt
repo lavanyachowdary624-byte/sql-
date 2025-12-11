@@ -1,0 +1,11 @@
+4.Replace Employee ID with the Unique identifier
+     Write a solution to show the unique ID of each user, 
+     If a user does not have a unique ID replace just show null.
+
+
+ Ans: select
+           EmployeeUNI.unique_id,
+           Employees.name
+      From Employees
+      left join EmployeeUNI
+          on Employees.id=employeeUNI.id;
