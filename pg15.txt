@@ -1,0 +1,7 @@
+15.Classes with at least 5 students
+Write a solution to find all the classes that have at least five students.
+ Ans: 
+      SELECT class
+   FROM Courses
+   GROUP BY class
+   HAVING COUNT(student) >= 5;
